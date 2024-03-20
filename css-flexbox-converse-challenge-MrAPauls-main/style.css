@@ -72,13 +72,14 @@ body {
   display: inline-block;
   margin-top: 25px;
   margin-bottom: 25px;
+  text-decoration: none;
 }
 
 /* apply style to both hover and active states */
 .more-info:hover,
 .more-info:active {
-  text-decoration: none;
-  color: blue;
+  text-decoration: underline;
+  color: black;
 }
 /*END of Product Information*/
 
