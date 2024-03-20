@@ -1,0 +1,170 @@
+/* Starting Styles for Converse Challenge */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Practice using CLASSES to style elements rather than ELEMENT selectors
+(and don't use ID# selectors) */
+
+/* .product - wraps the entire content */
+.product {
+  width: 825px;
+  border: solid black;
+  margin: 15px;
+  position: absolute;
+  left: 200px;
+}
+
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #dddddd;
+  color: black;
+  padding: 5px;
+}
+
+.row{
+  display: flex;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  width: 500px;
+}
+
+.details{
+  display: flex;
+  margin: 15px;
+  width: 500px;
+  flex-direction: column;
+}
+
+/* Product Information */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.shipping {
+  text-transform: uppercase;
+  color: gray;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  left: 120px;
+  top: -21px;
+}
+
+/* style links always list all 4 states in order LVHA */
+/* here link and visited are same style */
+.more-info:link,
+.more-info:visited {
+  color: black;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* apply style to both hover and active states */
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+  color: blue;
+}
+/*END of Product Information*/
+
+/* Product Details */
+.details-title {
+  text-transform:uppercase;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.details-list {
+  margin-left: 20px;
+  list-style: square;
+  line-height: 20px;
+}
+
+.details-list li {
+  margin-bottom: 15px
+}
+/*END of Product Details*/
+
+/*Add to Cart */
+.add-cart {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  /*cursor*/
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* add hover pseudo-class to .add-cart style */
+.add-cart:hover {
+  background-color: white;
+  color: black;
+}
+/*END of Add to Cart*/
+
+/*Color Blocks*/
+.color {
+  display: inline-flex;
+  background-color: black;
+  width: 25px;
+  height: 25px;
+}
+
+.color-red {
+  background-color: red;
+  margin-left: 10px;
+}
+.color-blue {
+  background-color: blue;
+  margin-left: 10px;
+}
+.color-yellow {
+  background-color: gold;
+  margin-left: 10px;
+}
+.color-green {
+  background-color: lime;
+  margin-left: 10px;
+}
+.color-brown {
+  background-color: sienna;
+  margin-left: 10px;
+}
+/*End of Color Blocks */
+
+/*Sale in Corner*/
+.sale {
+  background-color: red;
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*POSITIONING (Out-of-flow)*/
+  position: absolute;
+  top: -15px;
+  left: -10px;
+}
+/*END of Sale*/
+
+/*Flexbox Layout*/
+/*Determine which classes need to be flex containers and which are flex items */
